@@ -8,9 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>World Weather and Climate: 2018</title>
   </head>
   <body>
+    <!--Collapsable navigation bar: common to all pages-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
       <img src="Images/Guenthner-extra-small.png" width="28" height="35" class="d-inline-block align-top" alt="">
       <a class="navbar-brand" href="https://andrewguenthner.com">Andrew Guenthner</a>
@@ -57,8 +58,92 @@
         </div>
       </div>
     </nav>
-    <h1>Hello, world!</h1>
-
+    <!--Main body on landing page, cards on grid-->
+    <div class="container mt-3"> 
+      <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">A Global View from an Overlooked Source</h5>
+                <img class="img-thumbnail float-md-left w-50 mr-sm-3 mt-3 mb-sm-2" 
+                    src="Images/Temperature/jan2018_mean_abs.png"
+                    alt="January 2018 was hot in Australia and cold in Siberia">
+                <p class="card-text">Explore this site to learn about the world's 
+                    weather from a uniquely powerful data source you may never have
+                    encountered before.  Every day forecasters compute <a class="card-link"
+                    href=https://reanalyses.org/index.php/reanalysesorg-home-page target="_blank">
+                    reanalyses</a> of the world's weather.  Reanalyses typically take
+                    multiple sources of experimental data and combine them into a 
+                    consistent and coherent picture of what happened.  Creating a clear 
+                    picture of the recent past is the first step in making a valuable 
+                    forecast of the future.  A side benefit for data scientists is that
+                    reanalysis also provides beautiful data sets that let us visualize
+                    things like the weather in ways that are not possible otherwise.
+                </p>
+                <a href="#" class="btn btn-primary">See for yourself</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Explore the Data</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+        </div>
+      </div>
+        <div class="row mt-sm-3">
+            <div class="col-md-8">
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Acknowledgements</h5>
+                        <img class="img-thumbnail float-md-left w-25 mr-sm-3 mt-3" 
+                            src="Images/thank_you_public_domain.png"
+                            alt="thank you">
+                        <p class="card-text">The weather maps shown on this site were generated using 
+                            Copernicus Climate Change Service information from 2019.  The data contains re-formatted 
+                            Copernicus Climate Change Service information from 2019.  Neither the 
+                            European Commission nor EWCMF is responsible for any use that may be made
+                            of this information.  </p>
+                        <p class="card-text">The temperature and wind data are derived from the 
+                            <a class="card-link" href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview">
+                            ERA5 monthly averaged data on single levels from 1979 to present</a>
+                            .  
+                        </p>
+                        <p class="card-text"> The data is freely available (with a registered account) through the </p> <a class="card-link"
+                            href="https://cds.climate.copernicus.eu/toolbox-editor" target="_blank">
+                            Climata Data Store Toolbox</a>.  The Toolbox includes a (beta) Python API that lets you generate
+                            images, download files, and more with customized data processing.  
+                        </p>
+                        <p class="card-text">A special thanks to all the scientists and developers whose
+                            hard work has made amazing visualizations like these available to the public!
+                        </p>
+                        <a href="https://cds.climate.copernicus.eu/#!/home" class="btn btn-primary">Try it now!</a>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-md-4">
+                    <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Get the Data</h5>
+                                <p class="card-text">If you'd like to work with this data but 
+                                    in a simpler way before giving the source API a try, a
+                                    data table has been provided for your convenience.
+                                </p>
+                                <a href="#" class="btn btn-primary">View Data Set</a>
+                            </div>
+                            </div>                
+            </div>
+        </div>
+      </div>
+    <!-- Footer -->
+    <div class="container mt-2 mt-md-5 text-light bg-secondary">
+        Last updated 05-03-2019 by Andrew Guenthner.  Released under the 
+        <a class="container-link text-warning" href="https://opensource.org/licenses/MIT" target="_blank">
+            MIT Open Source License</a>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
