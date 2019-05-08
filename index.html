@@ -8,12 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>World Weather and Climate: 2018</title>
+    <title>The World's Weather in 2018</title>
   </head>
   <body>
     <!--Collapsable navigation bar: common to all pages-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-      <img src="Images/Guenthner-extra-small.png" width="28" height="35" class="d-inline-block align-top rounded-circle mr-3" alt="">
+      <img src="images/Guenthner-extra-small.png" width="28" height="35" class="d-inline-block align-top rounded-circle mr-3" alt="">
       <a class="navbar-brand" href="https://andrewguenthner.com">Andrew Guenthner</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,32 +24,57 @@
             <a class="nav-link" href="index.html">2018 Weather <span class="sr-only">(current)</span></a>
           </li>
         </ul>
-        <div class="btn-group">
-          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Single Maps
-          </button>
-          <div class="dropdown-menu">
-            <h6 class="dropdown-header">Monthly</h6>
-            <a class="dropdown-item" href="temp_abs.html">Temperature</a>
-            <a class="dropdown-item" href="prcp_abs.html">Precipitation</a>
-            <a class="dropdown-item" href="clouds_abs.html">Cloud Cover</a>
-            <a class="dropdown-item" href="wind_abs.html">Wind</a>
-          </div>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Highlights
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="jan_anom.html">January</a>
-            <a class="dropdown-item" href="feb_anom.html">February</a>
-            <a class="dropdown-item" href="mar_anom.html">March</a>
-            <a class="dropdown-item" href="apr_anom.html">April</a>
-          </div>
-          <div class="nav-item">
-            <a class="nav-link text-white" href="#">Data</a>
-          </div>
-        </div>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item-dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="SlideMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Map Slideshows
+              </a>
+            <div class="dropdown-menu dropdown-menu-right" id="#SlideMenu">
+              <a class="dropdown-item" href="temp_abs.html">Temperature</a>
+              <a class="dropdown-item" href="prcp_abs.html">Precipitation</a>
+              <a class="dropdown-item" href="wind_abs.html">Wind</a>
+              <a class="dropdown-item" href="clouds_abs.html">Cloud Cover</a>
+            </div>
+          </li>
+          <li class="nav-item-dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="HighlightMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Highlights
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="jan_anom.html">January</a>
+              <a class="dropdown-item" href="feb_anom.html">February</a>
+              <a class="dropdown-item" href="mar_anom.html">March</a>
+              <a class="dropdown-item" href="apr_anom.html">April</a>
+              <a class="dropdown-item" href="may_anom.html">May</a>
+              <a class="dropdown-item" href="jun_anom.html">June</a>
+              <a class="dropdown-item" href="jul_anom.html">July</a>
+              <a class="dropdown-item" href="aug_anom.html">August</a>
+              <a class="dropdown-item" href="sep_anom.html">September</a>
+              <a class="dropdown-item" href="oct_anom.html">October</a>
+              <a class="dropdown-item" href="nov_anom.html">November</a>
+              <a class="dropdown-item" href="dec_anom.html">December</a>
+            </div>
+          </li>
+          <li class="nav-item-dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="DataMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Interactive Data
+              </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="jan_data.html">January Data</a>
+              <a class="dropdown-item" href="feb_data.html">February Data</a>
+              <a class="dropdown-item" href="mar_data.html">March Data</a>
+              <a class="dropdown-item" href="apr_data.html">April Data</a>
+              <a class="dropdown-item" href="may_data.html">May Data</a>
+              <a class="dropdown-item" href="jun_data.html">June Data</a>
+              <a class="dropdown-item" href="jul_data.html">July Data</a>
+              <a class="dropdown-item" href="aug_data.html">August Data</a>
+              <a class="dropdown-item" href="sep_data.html">September Data</a>
+              <a class="dropdown-item" href="oct_data.html">October Data</a>
+              <a class="dropdown-item" href="nov_data.html">November Data</a>
+              <a class="dropdown-item" href="dec_data.html">December Data</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </nav>
     <!--Main body on landing page, cards on grid-->
@@ -60,7 +85,7 @@
             <div class="card-body">
                 <h5 class="card-title">A Global View from an Overlooked Source</h5>
                 <img class="img-thumbnail float-md-left w-50 mr-sm-3 mt-3 mb-sm-2" 
-                    src="Images/Temperature/jan2018_temp_abs.png"
+                    src="images/Temperature/jan2018_temp_abs.png"
                     alt="January 2018 was hot in Australia and cold in Siberia">
                 <p class="card-text">Explore this site to learn about the world's 
                     weather from a uniquely powerful data source you may never have
@@ -80,10 +105,30 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Explore the Data</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card-body">
+                <h5 class="card-title">Highlights</h5>
+                <p class="card-text">See the anomanlies in temperature, precipitation, wind, and clouds 
+                  mapped by month, with interesting weather news items for each month </p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <img class="w-100" src="images/Temp_Anom/jan2018_temp_anom.png" alt="January temp anomaly">
+                    </div>
+                    <div class="col-6">
+                      <img class="w-100" src="images/Prcp_Anom/jan2018_prcp_anom.png" alt="January precip anomaly">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <img class="w-100" src="images/Wind_Anom/jan2018_wind_anom.png" alt="January wind anomaly">
+                    </div>
+                    <div class="col-6">
+                      <img class="w-100" src="images/Cloud_Anom/jan2018_cloud_anom.png" alt="January cloud anomaly">
+                    </div>
+                  </div>
+                </div>
+                <p></p>
+                <a href="jan_anom.html" class="btn btn-primary">View Highlights</a>
             </div>
             </div>
         </div>
@@ -94,8 +139,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Acknowledgements</h5>
                         <img class="img-thumbnail float-md-left w-25 mr-sm-3 mt-3" 
-                            src="Images/thank_you_public_domain.png"
+                            src="images/thank_you_public_domain.png"
                             alt="thank you">
+                        <p class="card-text">This site wouldn't be possible without some amazing tools 
+                          developed by many people.  
+                        </p>
                         <p class="card-text">The weather maps shown on this site were generated using 
                             Copernicus Climate Change Service information from 2019.  The data contains re-formatted 
                             Copernicus Climate Change Service information from 2019.  Neither the 
@@ -106,27 +154,34 @@
                             ERA5 monthly averaged data on single levels from 1979 to present</a>
                             .  
                         </p>
-                        <p class="card-text"> The data is freely available (with a registered account) through the </p> <a class="card-link"
+                        <p class="card-text"> The data is freely available (with a registered account) through the <a class="card-link"
                             href="https://cds.climate.copernicus.eu/toolbox-editor" target="_blank">
                             Climata Data Store Toolbox</a>.  The Toolbox includes a (beta) Python API that lets you generate
                             images, download files, and more with customized data processing.  
                         </p>
+                        <p class="card-text">The city names are courtesy of the <a href="https://geonames.org" target="_blank">GeoNames.org</a>
+                          web site, a great resource for free geodata.</p>
+                        <p class="card-text">The tables are made possible by Derek Eder's awesome <a href="https://github.com/derekeder/csv-to-html-table" 
+                          target="_blank">CSS to HTML converter</a>.  </p>
                         <p class="card-text">A special thanks to all the scientists and developers whose
                             hard work has made amazing visualizations like these available to the public!
                         </p>
-                        <a href="https://cds.climate.copernicus.eu/#!/home" class="btn btn-primary">Try it now!</a>
+                        <a href="https://cds.climate.copernicus.eu/#!/home" target="_blank" class="btn btn-primary">Visit the site!</a>
                     </div>
                     </div>
             </div>
             <div class="col-md-4">
                     <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Get the Data</h5>
-                                <p class="card-text">If you'd like to work with this data but 
-                                    in a simpler way before giving the source API a try, a
-                                    data table has been provided for your convenience.
+                                <h5 class="card-title">Interactive Data Tool</h5>
+                                <p class="card-text">List the 10 sunniest spots in Canada in December 2018,
+                                  find the percentage of normal precipitation for your location, and more
+                                  with these amazing city- and country-referenced, searchable, sortable, 
+                                  interactive data tables generated from the gridded data.  You can download 
+                                  the data too in .csv format, for easy access to 3-degree gridded data,
+                                  without the fuss of an API.  
                                 </p>
-                                <a href="#" class="btn btn-primary">View Data Set</a>
+                                <a href="jan_data.html" class="btn btn-primary">Try it Now!</a>
                             </div>
                             </div>                
             </div>
