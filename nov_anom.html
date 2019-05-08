@@ -11,9 +11,9 @@
     <title>World Weather and Climate: 2018</title>
   </head>
   <body>
-    <!--Collapsable navigation bar: common to all pages-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-      <img src="Images/Guenthner-extra-small.png" width="28" height="35" class="d-inline-block align-top rounded-circle mr-3" alt="">
+  <!--Collapsable navigation bar: common to all pages-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <img src="images/Guenthner-extra-small.png" width="28" height="35" class="d-inline-block align-top rounded-circle mr-3" alt="">
       <a class="navbar-brand" href="https://andrewguenthner.com">Andrew Guenthner</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,38 +24,57 @@
             <a class="nav-link" href="index.html">2018 Weather <span class="sr-only">(current)</span></a>
           </li>
         </ul>
-        <div class="btn-group">
-          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Single Maps
-          </button>
-          <div class="dropdown-menu">
-            <h6 class="dropdown-header">Monthly</h6>
-            <a class="dropdown-item" href="#">Temperature</a>
-            <a class="dropdown-item" href="#">Precipitation</a>
-            <a class="dropdown-item" href="#">Cloud Cover (Low)</a>
-            <a class="dropdown-item" href="#">Wind</a>
-            <div class="dropdown-divider"></div>
-            <h6 class="dropdown-header">Departure from Normal</h6>
-            <a class="dropdown-item" href="#">Temperature</a>
-            <a class="dropdown-item" href="#">Precipitation</a>
-            <a class="dropdown-item" href="#">Cloud Cover (Low)</a>
-            <a class="dropdown-item" href="#">Wind</a>
-          </div>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Highlights
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Jan-Feb-Mar</a>
-            <a class="dropdown-item" href="#">Apr-May-Jun</a>
-            <a class="dropdown-item" href="#">Jul-Aug=Sep</a>
-            <a class="dropdown-item" href="#">Oct-Nov-Dec</a>
-          </div>
-          <div class="nav-item">
-            <a class="nav-link text-white" href="#">Data</a>
-          </div>
-        </div>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item-dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="SlideMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Map Slideshows
+              </a>
+            <div class="dropdown-menu dropdown-menu-right" id="#SlideMenu">
+              <a class="dropdown-item" href="temp_abs.html">Temperature</a>
+              <a class="dropdown-item" href="prcp_abs.html">Precipitation</a>
+              <a class="dropdown-item" href="wind_abs.html">Wind</a>
+              <a class="dropdown-item" href="clouds_abs.html">Cloud Cover</a>
+            </div>
+          </li>
+          <li class="nav-item-dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="HighlightMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Highlights
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="jan_anom.html">January</a>
+              <a class="dropdown-item" href="feb_anom.html">February</a>
+              <a class="dropdown-item" href="mar_anom.html">March</a>
+              <a class="dropdown-item" href="apr_anom.html">April</a>
+              <a class="dropdown-item" href="may_anom.html">May</a>
+              <a class="dropdown-item" href="jun_anom.html">June</a>
+              <a class="dropdown-item" href="jul_anom.html">July</a>
+              <a class="dropdown-item" href="aug_anom.html">August</a>
+              <a class="dropdown-item" href="sep_anom.html">September</a>
+              <a class="dropdown-item" href="oct_anom.html">October</a>
+              <a class="dropdown-item" href="nov_anom.html">November</a>
+              <a class="dropdown-item" href="dec_anom.html">December</a>
+            </div>
+          </li>
+          <li class="nav-item-dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="DataMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Interactive Data
+              </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="jan_data.html">January Data</a>
+              <a class="dropdown-item" href="feb_data.html">February Data</a>
+              <a class="dropdown-item" href="mar_data.html">March Data</a>
+              <a class="dropdown-item" href="apr_data.html">April Data</a>
+              <a class="dropdown-item" href="may_data.html">May Data</a>
+              <a class="dropdown-item" href="jun_data.html">June Data</a>
+              <a class="dropdown-item" href="jul_data.html">July Data</a>
+              <a class="dropdown-item" href="aug_data.html">August Data</a>
+              <a class="dropdown-item" href="sep_data.html">September Data</a>
+              <a class="dropdown-item" href="oct_data.html">October Data</a>
+              <a class="dropdown-item" href="nov_data.html">November Data</a>
+              <a class="dropdown-item" href="dec_data.html">December Data</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </nav>
     <!--Main body on landing page, cards on grid-->
@@ -119,7 +138,12 @@
                 skies near the devastating <a href="https://en.wikipedia.org/wiki/Camp_Fire_(2018)" target="_blank">
                 Camp Fire</a> in California were filled with smoke.
             </li>
-        </ul> 
+            <li>Interested in the raw data?  See the section below for information on how
+                to build your own maps, or have a look at the data tables on this site.
+            </li>
+            </ul> 
+        <p>
+        <a href="nov_data.html" class="btn btn-primary">Show me the data!</a>   
     </div>
     <!-- Control panel for changing months-->
     <div class="d-flex justify-content-center">
@@ -167,7 +191,7 @@
     </div>
     <!-- Footer -->
     <div class="container mt-2 mt-md-5 text-light bg-secondary">
-        Last updated 05-03-2019 by Andrew Guenthner.  Released under the 
+        Last updated 05-08-2019 by Andrew Guenthner.  Released under the 
         <a class="container-link text-warning" href="https://opensource.org/licenses/MIT" target="_blank">
             MIT Open Source License</a>
     </div>
